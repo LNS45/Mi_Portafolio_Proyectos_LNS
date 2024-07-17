@@ -22,7 +22,7 @@ export default function HomeSection() {
     }, [indexEspecialidad])
     
     return (
-        <Box w={"100%"} h={"calc(100vh - 5rem)"} position={"relative"} zIndex={"2"}>
+        <Box w={"100%"} h={"calc(100vh - 5rem)"} position={"relative"} zIndex={"2"} id="Inicio">
             <Box w={boxTextWidth} h={heightBox} position={"absolute"} backgroundColor={"#000000"} zIndex={"2"} margin={`${boxTextMgTop} 0rem 0rem ${boxTextMgLeft}`} boxShadow={`5px 5px 5px ${theme.colors.highlight}`} outline={`1px solid ${theme.colors.main}`} color={"white"} p={"0px 1rem"}>
                 <Text fontSize={fontSize} color={theme.colors.main}>¡Hola! Soy Lorenzo...</Text>
                 <Text fontSize={fontSize} color={theme.colors.highlight} animation={"textColorAnimated 1s ease-in-out infinite"} >Desarrollador {especialidad[indexEspecialidad]}</Text>

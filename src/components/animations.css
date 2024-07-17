@@ -28,3 +28,14 @@
 
 }
 
+@keyframes shadowColorAnimated {
+    0% {
+        filter: drop-shadow(1px 1px 5px #40E0D0);
+    }
+    50%{
+        filter: drop-shadow(1px 1px 10px #40E0D0);
+    }
+    100%{
+        filter: drop-shadow(1px 1px 5px #40E0D0);
+    }
+}
