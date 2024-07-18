@@ -10,7 +10,7 @@ export default function AcercaSection() {
     const flexDirection = useBreakpointValue({ base: "column", md: 'column', lg: "row", xl: "row"})
     const justifyContentResponsive = useBreakpointValue({ base: "center", md: 'space-around', lg: "space-between", xl: "space-between"})
     const fontSize = useBreakpointValue({base: ".8rem", md: ".8rem" , lg: "1rem", xl: "1rem"})
-    const heightResponsive = useBreakpointValue({ base: "55vh", md : "55vh" , lg : "80vh", xl: "80vh"})
+    const heightResponsive = useBreakpointValue({ base: "60vh", md : "60vh" , lg : "80vh", xl: "70vh"})
 
     return (
         <Box display={"flex"} h={"100vh"} w={"100%"} flexDirection={flexDirection} p={paddingFlex} alignItems={"center"} justifyContent={justifyContentResponsive} id="Acerca">
