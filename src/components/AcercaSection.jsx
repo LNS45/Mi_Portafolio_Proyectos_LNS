@@ -1,6 +1,7 @@
 "use client"
 import theme from "@/theme/theme";
 import { Box, Image, useBreakpointValue, Text, Flex, Button } from "@chakra-ui/react";
+import {EmailIcon, AttachmentIcon} from "@chakra-ui/icons";
 
 
 
@@ -19,8 +20,8 @@ export default function AcercaSection() {
                 <Text as={"h2"} fontSize={"2rem"} color={theme.colors.highlight} textShadow={"2px 2px 1px black"}>Acerca de mi</Text>
                 <Text as={"p"} fontSize={fontSize} color={theme.colors.main} textAlign={"justify"}>¡Hola! Soy Lorenzo Noé Chávez Cerda, estudiante de ingeniería en sistemas computacionales en la UVEG, donde actualmente me especializo en programación móvil. Además, soy graduado del programa Oracle One Next Education, con enfoque en desarrollo front-end. Mi pasión por la tecnología y el desarrollo de software me impulsa a explorar nuevas soluciones innovadoras y a mejorar constantemente mis habilidades en el campo. Estoy emocionado por colaborar en proyectos desafiantes que marquen la diferencia en el mundo digital.</Text>
                 <Flex justifyContent={"center"} gap={"2rem"} marginTop={".5rem"} >
-                    <Button backgroundColor={theme.colors.dark} color={theme.colors.highlight}>Contrátame</Button>
-                    <Button backgroundColor={theme.colors.dark} color={theme.colors.highlight}>CV</Button>
+                    <Button leftIcon={<EmailIcon />}  backgroundColor={theme.colors.dark} color={theme.colors.highlight} boxShadow={"2px 2px 5px black"} _hover={{boxShadow: `2px 2px 5px ${theme.colors.highlight}`}}>Contrátame</Button>
+                    <Button leftIcon={<AttachmentIcon />} backgroundColor={theme.colors.dark} color={theme.colors.highlight} boxShadow={"2px 2px 5px black"} _hover={{boxShadow: `2px 2px 5px ${theme.colors.highlight}`}}>CV</Button>
                 </Flex>
             </Box>
         </Box>
