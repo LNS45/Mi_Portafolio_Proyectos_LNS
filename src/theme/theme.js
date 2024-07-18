@@ -8,7 +8,7 @@ const theme = {
         dark: "#192A3A",
     },
     fonts: {
-        main: 'Roboto',
+        main: 'Roboto Mono',
         secondary: 'Open Sans'
     },
 };
