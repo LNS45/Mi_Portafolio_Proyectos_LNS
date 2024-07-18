@@ -5,10 +5,14 @@ import { useBreakpointValue } from '@chakra-ui/react';
 import { Flex, Image, Link, ListItem, UnorderedList} from '@chakra-ui/react'
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import { useMenu } from "@/context/menuContext";
+
 
 const NavBar = () => {
     //Manejo de boton de menu en movil
     let [isMenuActive, setMenuActive] = useState(false);
+    //Activacion del menu
+    const context = useMenu();
     //Breakpoints para la responsividad
     const displayFlex = useBreakpointValue({base: "none", md: "flex", lg: "flex"})
     const widthList = useBreakpointValue({ base: "100vw", md: "100%", lg: "100%",})
@@ -22,7 +26,7 @@ const NavBar = () => {
     //Click del boton menu en movil
     const menuHandler = () => {
         setMenuActive(!isMenuActive);
-
+        context.onOpen();
     }
     //Color del boton menu segun su actividad
     let colorBtn = isMenuActive ? theme.colors.highlight : theme.colors.main;
