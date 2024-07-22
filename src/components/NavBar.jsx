@@ -9,10 +9,9 @@ import { useMenu } from "@/context/menuContext";
 
 
 const NavBar = () => {
-    //Manejo de boton de menu en movil
-    let [isMenuActive, setMenuActive] = useState(false);
     //Activacion del menu
     const context = useMenu();
+    const {onOpen, setMenuActive, isMenuActive} = context;
     //Breakpoints para la responsividad
     const displayFlex = useBreakpointValue({base: "none", md: "flex", lg: "flex"})
     const widthList = useBreakpointValue({ base: "100vw", md: "100%", lg: "100%",})
@@ -26,11 +25,11 @@ const NavBar = () => {
     //Click del boton menu en movil
     const menuHandler = () => {
         setMenuActive(!isMenuActive);
-        context.onOpen();
+        onOpen();
     }
     //Color del boton menu segun su actividad
     let colorBtn = isMenuActive ? theme.colors.highlight : theme.colors.main;
-    console.log("TEST");
+    
     
     return (
         <Flex  w={"100%"} h={"5rem"} p={paddingFlex} alignItems={"center"} justifyContent={"space-between"} color={"white"} backgroundColor={colorFlex} position={"fixed"} zIndex={"5"}>
