@@ -38,8 +38,8 @@ const NavBar = () => {
                     <Flex direction={"row"} gap={"2rem"} alignItems={"center"} width={widthList} >
                         <ListItem><Link href='#Inicio' _hover={linkHover}>INICIO</Link></ListItem>
                         <ListItem><Link href='#Acerca' _hover={linkHover}>ACERCA DE MI</Link></ListItem>
-                        <ListItem><Link href='#Proyectos' _hover={linkHover}>PROYECTOS</Link></ListItem>
                         <ListItem><Link href='#Skills' _hover={linkHover}>SKILLS</Link></ListItem>
+                        <ListItem><Link href='#Proyectos' _hover={linkHover}>PROYECTOS</Link></ListItem>
                         <ListItem><Link href='#Contacto' _hover={linkHover} backgroundColor={theme.colors.dark} borderRadius={"10px"} padding={"0.5rem"} boxShadow={`0px 0px 5px ${theme.colors.highlight}`}>CONTACTO</Link></ListItem>
                     </Flex>    
                 </UnorderedList>
