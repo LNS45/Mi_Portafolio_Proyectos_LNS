@@ -5,11 +5,11 @@ import { useEffect, useState } from "react"
 
 
 export default function HomeSection() {
-    const boxTextWidth = useBreakpointValue({base: "80%" , md: "80%" , lg: "50%"})
+    const boxTextWidth = useBreakpointValue({base: "auto" , md: "auto" , lg: "50rem", xl:"50rem"})
     const boxTextMgTop = useBreakpointValue({base: "50%" , md: "50%" , lg: "10rem"})
     const boxTextMgLeft = useBreakpointValue({base: "2rem" , md: "80%" , lg: "6rem"})
-    const fontSize = useBreakpointValue({base: "1.6rem", md: "3rem" , lg: "2.8rem", xl: "3rem"})
-    const heightBox = useBreakpointValue({base: "6rem", lg: "10rem", md: "10rem"})
+    const fontSize = useBreakpointValue({base: "1.5rem", md: "3rem" , lg: "2.8rem", xl: "3rem"})
+    const heightBox = useBreakpointValue({base: "auto", lg: "10rem", md: "10rem"})
     const [especialidad, setEspecialidad] = useState(["Front-End","Mobile"]);
     const [indexEspecialidad, setIndexEspecialidad] = useState(0);
     
