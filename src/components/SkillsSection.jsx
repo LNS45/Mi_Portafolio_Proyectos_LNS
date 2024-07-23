@@ -65,7 +65,7 @@ export default function SkillsSection(){
     
     return (
         <Box display={"flex"} h={"100vh"} w={"100%"} flexDirection={flexDirection} p={paddingFlex} alignItems={"center"}  id="Skills" gap={"1rem"}>
-            <Text marginTop={marginTopResponsive} as={"h2"} fontSize={"2rem"} color={theme.colors.highlight} textShadow={"2px 2px 1px black"}>Skills</Text>
+            <Text marginTop={marginTopResponsive} as={"h2"} fontSize={"1.85rem"} color={theme.colors.highlight} textShadow={"2px 2px 1px black"}>Skills</Text>
             <UnorderedList styleType={"none"} display={"flex"} justifyContent={"space-evenly"} alignItems={"center"} flexWrap={"wrap"} gap={"1rem"}>
                 {skills.map((skill) => (
                     <ListItem key={skill.id} w={"8rem"} h={"8rem"} backgroundColor={theme.colors.dark} animation={"shadowColorAnimated 1s ease-in-out infinite"} borderRadius={"2rem"} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
