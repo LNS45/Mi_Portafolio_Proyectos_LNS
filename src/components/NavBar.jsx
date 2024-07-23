@@ -4,7 +4,6 @@ import theme from "@/theme/theme";
 import { useBreakpointValue } from '@chakra-ui/react';
 import { Flex, Image, Link, ListItem, UnorderedList} from '@chakra-ui/react'
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { useState } from "react";
 import { useMenu } from "@/context/menuContext";
 
 
@@ -32,7 +31,7 @@ const NavBar = () => {
     
     
     return (
-        <Flex  w={"100%"} h={"5rem"} p={paddingFlex} alignItems={"center"} justifyContent={"space-between"} color={"white"} backgroundColor={colorFlex} position={"fixed"} zIndex={"5"}>
+        <Flex  w={"100%"} h={"5rem"} p={paddingFlex} alignItems={"center"} justifyContent={"space-between"} color={"white"} backgroundColor={colorFlex} position={"fixed"} zIndex={"5"} fontFamily={theme.fonts.main}>
             <Link href='/'><Image src="images/logo_text.png" alt='Logo' width={"8rem"}/></Link>
                 <UnorderedList listStyleType={"none"} display={displayFlex}>
                     <Flex direction={"row"} gap={"2rem"} alignItems={"center"} width={widthList} >

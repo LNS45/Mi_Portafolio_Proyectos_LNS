@@ -8,7 +8,7 @@ const theme = {
         dark: "#192A3A",
     },
     fonts: {
-        main: 'Roboto Mono',
+        main: "IBM Plex Mono",
         secondary: 'Open Sans'
     },
 };
