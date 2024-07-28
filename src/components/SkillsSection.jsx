@@ -64,7 +64,7 @@ export default function SkillsSection(){
     ];
     
     return (
-        <Box display={"flex"} h={"100vh"} w={"100%"} flexDirection={flexDirection} p={paddingFlex} alignItems={"center"}  id="Skills" gap={"1rem"}>
+        <Box display={"flex"} h={"auto"} w={"100%"} flexDirection={flexDirection} p={paddingFlex} alignItems={"center"}  id="Skills" gap={"1rem"}>
             <Text marginTop={marginTopResponsive} as={"h2"} fontSize={"1.85rem"} color={theme.colors.highlight} textShadow={"2px 2px 1px black"}>Skills</Text>
             <UnorderedList styleType={"none"} display={"flex"} justifyContent={"space-evenly"} alignItems={"center"} flexWrap={"wrap"} gap={"1rem"}>
                 {skills.map((skill) => (
