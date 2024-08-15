@@ -22,8 +22,8 @@ export default function CardProyect(){
                     <Image src="/images/Backgrounds/background.jpg" flex={"1"} w={ImageSizeResponsive} borderRadius={"10px"} boxShadow={` 1px 1px 2px black, 5px 5px 1px ${theme.colors.secondary}`}/>
                 </Flex>
                 <ButtonGroup h={"auto"}>
-                    <Button  boxShadow={`0px 0px 5px ${theme.colors.highlight}`} textShadow={"1px 1px 1px black"} color={theme.colors.highlight} backgroundColor={theme.colors.secondaryDark}>Demo</Button>
-                    <Button boxShadow={`0px 0px 5px ${theme.colors.highlight}`} textShadow={"1px 1px 1px black"} color={theme.colors.highlight} backgroundColor={theme.colors.secondaryDark}>Repositorio</Button>
+                    <Button  boxShadow={`0px 0px 5px ${theme.colors.highlight}`} textShadow={"1px 1px 1px black"} color={theme.colors.highlight} backgroundColor={theme.colors.secondaryDark} _hover={{boxShadow: `2px 2px 5px ${theme.colors.highlight}`}}>Demo</Button>
+                    <Button boxShadow={`0px 0px 5px ${theme.colors.highlight}`} textShadow={"1px 1px 1px black"} color={theme.colors.highlight} backgroundColor={theme.colors.secondaryDark} _hover={{boxShadow: `2px 2px 5px ${theme.colors.highlight}`}}>Repositorio</Button>
                 </ButtonGroup> 
             </CardBody>
             <CardFooter display={"flex"} flexDirection={"column"} gap={".5rem"}>

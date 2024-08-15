@@ -9,7 +9,7 @@ export default function AcercaSection() {
     const paddingFlex = useBreakpointValue({ base: "1rem", md: "0 5rem", lg: "0 5rem"})
     const sizeResponsive = useBreakpointValue({ base: "16rem", md: "20rem", lg: "25em", xl:"25rem"})
     const flexDirection = useBreakpointValue({ base: "column", md: 'column', lg: "row", xl: "row"})
-    const justifyContentResponsive = useBreakpointValue({ base: "center", md: 'space-around', lg: "space-between", xl: "space-between"})
+    const justifyContentResponsive = useBreakpointValue({ base: "space-around", md: 'space-around', lg: "space-between", xl: "space-between"})
     const fontSize = useBreakpointValue({base: ".8rem", md: ".8rem" , lg: "1rem", xl: "1rem"})
     const heightResponsive = useBreakpointValue({ base: "58vh", md : "60vh" , lg : "80vh", xl: "70vh"})
 
