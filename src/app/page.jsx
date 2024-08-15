@@ -4,6 +4,7 @@ import { Box } from "@chakra-ui/react"
 import "@/components/animations.css"
 import SkillsSection from "@/components/SkillsSection"
 import ProyectosSection from "@/components/ProyectosSection"
+import ContactSection from "@/components/ContactSection"
 
 //Pagina principal, para agregar mas rutas se requiere crear mas carpetas con su page.jsx en la carpeta app
 export default function Page(){
@@ -13,6 +14,7 @@ export default function Page(){
             <AcercaSection/>
             <SkillsSection />
             <ProyectosSection />
+            <ContactSection />
         </Box>
     )
 }
