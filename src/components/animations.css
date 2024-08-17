@@ -1,3 +1,7 @@
+/*Scroll suave*/
+html {
+    scroll-behavior: smooth;
+}
 /*Animaciones del Navbar*/
 @keyframes rotateMenu {
     0% {

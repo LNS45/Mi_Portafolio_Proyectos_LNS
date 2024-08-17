@@ -22,7 +22,7 @@ export default function MenuDrawer() {
                         <Link display={"flex"} alignItems={"center"} justifyContent={"center"}  w={"100%"} flex={"1"} href="#Acerca" onClick={closeUpdateMenuNavBar}><Text>ACERCA DE MI</Text></Link>
                         <Link display={"flex"} alignItems={"center"} justifyContent={"center"}  w={"100%"} flex={"1"} href="#Skills" onClick={closeUpdateMenuNavBar}><Text>SKILLS</Text></Link>
                         <Link display={"flex"} alignItems={"center"} justifyContent={"center"}  w={"100%"} flex={"1"} href="#Proyectos" onClick={closeUpdateMenuNavBar}><Text>PROYECTOS</Text></Link>
-                        <Link display={"flex"} alignItems={"center"} justifyContent={"center"}  w={"100%"} flex={"1"} href="#Inicio" onClick={closeUpdateMenuNavBar}><Text>CONTACTO</Text></Link>
+                        <Link display={"flex"} alignItems={"center"} justifyContent={"center"}  w={"100%"} flex={"1"} href="#Contacto" onClick={closeUpdateMenuNavBar}><Text>CONTACTO</Text></Link>
                 </DrawerBody>
                 <DrawerFooter flex={"2"} display={"flex"} flexDirection={"column"} alignItems={"center"} backgroundColor={theme.colors.dark} >
                     <Flex flexDirection={"row"} justifyContent={"space-around"} w={"100%"}>

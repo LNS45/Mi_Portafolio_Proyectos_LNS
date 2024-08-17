@@ -6,7 +6,7 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 
 export default function ContactSection() {
-    const paddingFlex = useBreakpointValue({ base: "1rem 2rem", md: "1rem", lg: "1rem 2rem"})
+    const paddingFlex = useBreakpointValue({base: "1rem 2rem", md: "1rem", lg: "1rem 2rem"})
     const fontSize = useBreakpointValue({base: "1.5rem", md: ".8rem" , lg: "1.5rem", xl: "1.5rem"})
     const flexDirectionResponsive = useBreakpointValue({base: "column", md: "column", lg: "row",})
     const [isMessageSending, setIsMessageSending] = useState({
