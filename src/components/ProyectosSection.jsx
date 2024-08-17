@@ -25,11 +25,40 @@ export default function ProyectosSection() {
     const proyectos = [
         {
             id: "1",
-            name: "",
-            description: "",
-            linkDemo: "",
-            linkRepo: "",
-            techIcons: [],
+            name: "Ecommerce de Instrumentos Musicales",
+            description: "CRUD. Sitio web de un ecommerce para instrumentos musicales. Parte del Challenge 2 del programa Oracle Next Education, se buscaba poner en práctica los conocimientos adquiridos con javascript, html y css.",
+            linkDemo: "https://lns45.github.io/Challenge-3---E-Commerce/",
+            linkRepo: "https://github.com/LNS45/Challenge-3---E-Commerce",
+            techIcons: [
+                "/images/icons/icon_js.png",
+                "/images/icons/icon_css.png",
+                "/images/icons/icon_figma.png",
+            ],
+            image: "/images/projects/ss_music.png",
+        },
+        {
+            id: "2",
+            name: "Cineflex",
+            description: "Aplicación web CRUD con temática de plataforma de streaming para guardar videos. Parte del último Challenge del programa de Oracle Next Education.",
+            linkDemo: "https://cine-flexx.netlify.app/",
+            linkRepo: "https://github.com/LNS45/CineFlix",
+            techIcons: [
+                "/images/icons/icon_react.png",
+                "/images/icons/icon_firebase.png",
+            ],
+            image: "/images/projects/ss_cineflex.png",
+        },
+        {
+            id: "3",
+            name: "Página web para hospital",
+            description: "Clonación de un diseño en figma para un sitio web de un hospital.",
+            linkDemo: "https://superb-alfajores-ff5183.netlify.app/",
+            linkRepo: "https://github.com/LNS45/Centro_Medico/tree/master",
+            techIcons: [
+                "/images/icons/icon_react.png",
+                "/images/icons/icon_figma.png",
+            ],
+            image: "/images/projects/ss_hospital.png"
         },
     ];
 
@@ -43,7 +72,11 @@ export default function ProyectosSection() {
                     ))}
                 </Flex>
             </Flex>
-            <CardProyect />
+            {
+                proyectos.map(proyecto => (
+                    <CardProyect data={proyecto} />
+                ))
+            }
         </Box>
     )
 }
